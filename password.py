@@ -13,8 +13,8 @@ def hasNumbers(inputString):
 '''
 
 def main():
-    password = string.join(map(str, (random.sample((chars),length))))
-    print(password)
+    print(string.join(map(str, (random.sample((chars),length)))))
+
 
 if __name__ == '__main__':
     main()
