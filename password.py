@@ -1,20 +1,25 @@
-#password generator
+# password generator
 
 import string
 import random
 
-sp = string.printable
-chars = list(string.strip(sp))
+chars = (str.strip(string.printable))
 length = input('How long a password would you like?:')
 
-'''
-def hasNumbers(inputString):
-    return any(char.isdigit() for char in inputString)
-'''
 
 def main():
-    print(string.join(map(str, (random.sample((chars),length)))))
-
+    rndm_sample = random.sample((chars), length)
+    print(''.join(map(str, rndm_sample)))
 
 if __name__ == '__main__':
     main()
+
+    """
+todo:
+   - try to replace ''string" module functionality with standard builtin str
+    - validate input - ensure positive integer (natural?)
+    - check output, make sure it contains at least one of each:
+        Upper/lower case letter, number, symbol
+        how to implement...if statement, looping or try?
+
+    """
