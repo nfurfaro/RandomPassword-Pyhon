@@ -5,10 +5,10 @@ import random
 
 chars = (str.strip(string.printable))
 length = input('How long a password would you like?:')
+rndm_sample = random.sample((chars), length)
 
 
 def main():
-    rndm_sample = random.sample((chars), length)
     print(''.join(map(str, rndm_sample)))
 
 if __name__ == '__main__':
