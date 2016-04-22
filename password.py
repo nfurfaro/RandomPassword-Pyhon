@@ -9,7 +9,7 @@ rand_sample = random.sample((chars), length)
 
 
 def main():
-    print(''.join(map(str, rndm_sample)))
+    print(''.join(map(str, rand_sample)))
 
 if __name__ == '__main__':
     main()
